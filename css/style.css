@@ -31,6 +31,11 @@ html, body {
     max-width: 100vw;
 }
 
+.text {
+    position: relative;
+    width: 200px;
+}
+
 .main__page {
     display: grid;
     width: 100vw;
@@ -125,9 +130,21 @@ main {
     height: 100%;
     grid-template-columns: 60vw 40vw;
     grid-template-rows: 100px auto;
-    grid-template-areas: "title title" "about figure";
+    grid-template-areas: "title title""about figure";
     overflow: hidden;
+
+
 }
+
+.figure_container {
+    display: flex;
+    position: relative;
+    grid-area: figure;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
 
 .info {
     grid-area: about;
@@ -138,10 +155,7 @@ main {
 }
 
 figure {
-    grid-area: figure;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     width: 170px;
     height: 470px;
     user-select: none;
@@ -237,18 +251,24 @@ footer {
 }
 
 @media screen and (max-width: 1120px) {
-       main{
-        
-    grid-template-columns: 100vw;
-    grid-template-rows: 100px 500px auto;
-    grid-template-areas: "title" "about" "figure";
+    main {
+
+        grid-template-columns: 100vw;
+        grid-template-rows: 100px 500px auto;
+        grid-template-areas: "title""about""figure";
     }
-     .main__page {
+
+    .main__page {
         height: 1210px;
         grid-template-rows: 110px 1100px;
     }
 
     .info {
+        left: 20vw;
+    }
+
+    .figure_container {
+
         left: 20vw;
     }
 }
@@ -259,26 +279,31 @@ footer {
         width: 600px;
     }
 
-    p {
+    .figure_container {
+        left: 8vw;
+    }
+
+    p, li {
         font-size: var(--cellphone__font-size);
     }
-    #planta{
+
+    #planta {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 660px) {
 
-    figure{
+    figure {
         width: 150px;
         height: 400px;
     }
 
-    #planta{
+    #planta {
         width: 100%;
     }
 
-    p{
+    p {
         max-width: 90%;
         width: 90%;
     }
@@ -301,6 +326,11 @@ footer {
         max-width: 100%;
         width: 100%;
         flex-direction: column;
+    }
+
+    .figure_container {
+        position: relative;
+        left: 2vw;
     }
 
     .info__content {
@@ -371,7 +401,7 @@ footer {
     cursor: pointer;
 }
 
-.cards:hover{
+.cards:hover {
     transform: scale(1.05);
 }
 
