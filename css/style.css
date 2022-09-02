@@ -363,7 +363,7 @@ footer {
 .cards {
     display: inline-block;
     padding: 15px 20px;
-    margin: 30px 10px 0px 0px;
+    margin: 30px 5px 0px 0px;
     border: .3px solid var(--principal__color);
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     border-radius: 3px;
