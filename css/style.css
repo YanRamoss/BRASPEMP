@@ -118,32 +118,32 @@ h1 {
 }
 
 main {
+    display: grid;
     grid-area: main;
     position: relative;
     width: 100%;
     height: 100%;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 100px auto;
+    grid-template-areas: "title title" "about figure";
     overflow: hidden;
 }
 
 .info {
-    position: absolute;
+    grid-area: about;
+    position: relative;
     width: 500px;
     left: 15vw;
-}
-
-.info, .main__content {
-    margin-top: 40px;
-}
-
-.info__content {
-    margin-top: 15px;
+    overflow: hidden;
 }
 
 figure {
-    position: absolute;
-    width: 175px;
+    grid-area: figure;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
     height: 470px;
-    right: 15vw;
     user-select: none;
 }
 
@@ -237,23 +237,23 @@ footer {
 }
 
 @media screen and (max-width: 1120px) {
-    .main__page {
-        height: 1250px;
-        grid-template-rows: 110px 1140px;
+       main{
+        
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 500px auto;
+    grid-template-areas: "title" "about" "figure";
+    }
+     .main__page {
+        height: 1210px;
+        grid-template-rows: 110px 1100px;
     }
 
     .info {
         left: 20vw;
     }
-
-    figure {
-        top: 600px;
-        left: 43vw;
-    }
 }
 
 @media screen and (max-width: 850px) {
-
     .info {
         left: 8vw;
         width: 600px;
@@ -262,14 +262,27 @@ footer {
     p {
         font-size: var(--cellphone__font-size);
     }
-
-    figure {
-        left: 38vw;
+    #planta{
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 660px) {
-    
+
+    figure{
+        width: 150px;
+        height: 400px;
+    }
+
+    #planta{
+        width: 100%;
+    }
+
+    p{
+        max-width: 90%;
+        width: 90%;
+    }
+
     main h1 {
         font-size: 20px;
     }
@@ -284,23 +297,16 @@ footer {
 
     .info {
         display: flex;
-        left: 8vw;
-        max-width: 90%;
-        width: 90%;
-        flex-wrap: wrap;
+        left: 2vw;
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
     }
 
     .info__content {
         font-size: 12px;
     }
 
-    figure {
-        left: 10vw;
-    }
-
-    #planta {
-        width: 68%;
-    }
 
     footer li {
         font-size: 11px;
@@ -345,7 +351,7 @@ footer {
 .card {
     user-select: none;
     width: 500px;
-    height: 300px;
+    height: 200px;
     padding: 0px 0px 0px 10px;
 }
 
