@@ -17,10 +17,10 @@ const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
 if( prefersColorScheme.matches ) {
   // O tema é o dark
-  logo.innerHTML == "<img src='./img/logo_dark.png' alt='' id='logo'>";
+  logo.innerHTML = "<img src='./img/logo_dark.png' alt='' id='logo'>";
 console.log('dark');
 } else {
   // O tema é o light
-  logo.innerHTML == "<img src='./img/logo.png' alt='' id='logo'>"; 
+  logo.innerHTML = "<img src='./img/logo.png' alt='' id='logo'>"; 
 console.log('ligh');
 }
