@@ -17,7 +17,7 @@
     --desktop__h1-font-size: 18px;
 }
 
-h1, h4{
+h1, h4 {
     color: var(--principal__color);
 }
 
@@ -50,11 +50,17 @@ html, body {
 
 header {
     grid-area: header;
-    position: relative;
+    position: fixed;
     display: flex;
     width: 100vw;
     height: 110px;
     user-select: none;
+    z-index: 101;
+}
+
+header, nav {
+
+    background-color: white;
 }
 
 a {
