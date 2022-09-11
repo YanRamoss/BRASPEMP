@@ -15,7 +15,6 @@ var members = [
 ];
 var devs = ["---\nYan Ramos - @yanrmss\n---"];
 const switcher = document.getElementById("switcher");
-const nav = document.getElementById("nav");
 
 if (prefersColorScheme.matches) {
   logo.innerHTML = "<img src='./img/logo_dark.png' alt='' id='braspemp'>";
