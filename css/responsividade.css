@@ -5,7 +5,7 @@
 
  #location { padding: 30px 10px 0px 50px; } 
 
- #location p { width: 300px; } 
+ #location p { width: 250px; } 
  #about h4, #about p, #about li { width: 350px; margin: 0 auto; } 
  footer { justify-content: space-around; } 
  }
