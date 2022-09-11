@@ -1,0 +1,45 @@
+@import url(./principal.css);
+@import url(./responsividade.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Livvic;
+    src: url(../fonts/Livvic/Livvic-Light.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(../fonts/Inter/Inter-Bold.ttf);
+}
+
+body, html {
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.light__theme {
+    --bgColor: white;
+    --fontColor: black;
+    --overflowColor: rgba(0, 0, 0, 0.514);
+    --navItemColor: #2f3236;
+    --principalColor: #00cba9;
+}
+
+.dark__theme {
+    --bgColor: black;
+    --fontColor: white;
+    --overflowColor: white;
+    --navItemColor: white;
+    --principalColor: #00cba9;
+}
