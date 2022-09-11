@@ -4,7 +4,7 @@ const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const devButton = document.getElementById("devs");
 const membersButton = document.getElementById("members");
 var members = [
-  "Yan Ramos - @yanrmss\n",
+  "Yan Ramos - @yan_rmss\n",
   "Vitor Carvalho - -/-\n",
   "Daniel Alvarenga - -/-\n",
   "Sofia Araújo - @sofi4_barros_\n",
