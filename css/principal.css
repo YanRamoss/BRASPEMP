@@ -20,7 +20,7 @@ nav a { color: var(--navItemColor); }
 
 footer { grid-area: footer; background-color: #00cba9; } 
 
-nav { grid-area: nav; position: fixed; width: 100%; display: grid; grid-template-columns: 170px auto; grid-template-rows: 100px; grid-template-areas: "ul_logo ul_items"; border-bottom: solid .1px var(--fontColor); background-color: var(--bgColor); z-index: 101; } 
+nav { grid-area: nav; position: fixed; width: 100%; display: grid; grid-template-columns: 170px auto; grid-template-rows: 100px; grid-template-areas: "ul_logo ul_items"; border-bottom: solid .1px var(--fontColor); background-color: var(--bgColor); z-index: 101; user-select: none;} 
 
 .ul_logo, .ul_items { display: flex; align-items: center; } 
 
@@ -67,7 +67,7 @@ main h1, #about, #location { width: 100%; height: 100%; }
 
 #figure, #planta { display: flex; width: 130px; } 
 
-.cards { display: flex; width: 100%; height: 95px; justify-content: center; margin: 15px 0px 0px 0px; align-items: center; } 
+.cards { display: flex; width: 100%; height: 95px; justify-content: center; margin: 15px 0px 0px 0px; align-items: center; user-select: none;} 
 
 .card { border: solid 1px #00cba9; border-radius: 4px; height: 65px; margin: 0px 10px 0px 0px; cursor: pointer; } 
 
