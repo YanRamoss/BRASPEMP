@@ -98,11 +98,16 @@ nav {
     justify-content: flex-end;
 }
 
-.ul_items li a {
+#switcher {
+    margin: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.ul_items #item a {
     font-family: InterBold;
 }
 
-.ul_items li::after {
+.ul_items #item::after {
     display: flex;
     flex-direction: column;
     content: '';
@@ -111,7 +116,7 @@ nav {
     background-color: #00cba9;
 }
 
-.ul_items li:hover::after {
+.ul_items #item:hover::after {
     animation: afterLoad .8s ease-out;
     width: 100%;
 }
