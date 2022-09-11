@@ -17,7 +17,6 @@ console.log('dark');
     logo.innerHTML = "<img src='./img/logo.png' alt='' id='braspemp'>"; 
     figure.innerHTML = "<img src='./img/planta.png' alt='' id='planta'>";
     document.body.classList.toggle('ligh__theme');
-    nav.style.classList.toggle('light');
 console.log('ligh');
 }
 
