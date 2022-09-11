@@ -6,6 +6,7 @@ const membersButton = document.getElementById('members');
 var members = ['Yan Ramos - @yanrmss\n', 'Vitor Carvalho - -/-\n', 'Daniel Alvarenga - -/-\n', 'Sofia Araújo - @sofi4_barros_\n', 'Artur Dizela - @mvp.dizela\n', 'Gustavo Belchior - @gxt_andrade\n', 'Pedro Henrique - @eu_pedro.13\n', 'Vinycius Wigner - @vinycius_wigner'];
 var devs = ['---\nYan Ramos - @yanrmss\n---'];
 const switcher = document.getElementById('switcher');
+const nav = document.getElementById('nav');
 
 if( prefersColorScheme.matches ) {
     logo.innerHTML = "<img src='./img/logo_dark.png' alt='' id='braspemp'>";
@@ -16,6 +17,7 @@ console.log('dark');
     logo.innerHTML = "<img src='./img/logo.png' alt='' id='braspemp'>"; 
     figure.innerHTML = "<img src='./img/planta.png' alt='' id='planta'>";
     document.body.classList.toggle('ligh__theme');
+    nav.style.classList.toggle('light');
 console.log('ligh');
 }
 

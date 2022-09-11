@@ -43,3 +43,8 @@ body, html {
     --navItemColor: white;
     --principalColor: #00cba9;
 }
+
+.light{
+    background-color: white;
+    border-bottom: solid .5px black;
+}
