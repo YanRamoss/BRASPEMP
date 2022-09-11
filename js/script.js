@@ -34,11 +34,13 @@ switcher.addEventListener('click', () =>{
 })
 
 const alter = () =>{
-    if(document.body.classList == 'dark__theme'){
+    if(document.body.classList.contains('dark__theme')){
+        console.log('1');
         figure.innerHTML = "<img src='./img/planta.png' alt='' id='planta'>";
         logo.innerHTML = "<img src='./img/logo.png' alt='' id='braspemp'>";
         console.log('Alterado para o tema claro');
-    } else if(document.body.classList == 'light__theme'){
+    } else if(document.body.classList='light__theme'){
+        console.log('2');
         figure.innerHTML = "<img src='./img/planta_dark.png' alt='' id='planta'>";
         logo.innerHTML = "<img src='./img/logo_dark.png' alt='' id='braspemp'>";
         console.log('Alterado para o tema escuro');
