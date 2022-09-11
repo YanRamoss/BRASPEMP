@@ -13,7 +13,7 @@ var members = [
   "Pedro Henrique - @eu_pedro.13\n",
   "Vinycius Wigner - @vinycius_wigner",
 ];
-var devs = ["---\nYan Ramos - @yanrmss\n---"];
+var devs = ["---\nYan Ramos - @yan_rmss\n---"];
 const switcher = document.getElementById("switcher");
 
 if (prefersColorScheme.matches) {
