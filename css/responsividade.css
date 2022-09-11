@@ -1,4 +1,7 @@
 @media screen and (min-width: 700px) {
+    p, li, a{
+        font-size: 13px;
+    }
     body {
         grid-template-rows: 100px 540px 350px 250px;
     }
