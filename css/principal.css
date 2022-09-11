@@ -40,7 +40,9 @@ p, a, li, span {
     font-family: Inter;
     font-size: 12px;
 }
-
+nav{
+    background-color: var(--bgColor);
+}
 main, .wave, footer {
     position: relative;
     width: 100%;
@@ -73,7 +75,6 @@ nav {
     grid-template-rows: 100px;
     grid-template-areas: "ul_logo ul_items";
     border-bottom: solid .1px var(--fontColor);
-    background-color: var(--bgColor);
     z-index: 101;
 }
 
