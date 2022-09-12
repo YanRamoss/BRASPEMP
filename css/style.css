@@ -29,6 +29,7 @@ body, html {
 }
 
 .light__theme {
+    --navBackground: rgba(255, 255, 255, 0.7);
     --barColor: rgba(255, 255, 255, 0.616);
     --bgColor: white;
     --fontColor: black;
@@ -38,6 +39,7 @@ body, html {
 }
 
 .dark__theme {
+    --navBackground: rgba(0, 0, 0, 0.7);
     --barColor: rgba(0, 0, 0, 0.616);
     --bgColor: black;
     --fontColor: white;
