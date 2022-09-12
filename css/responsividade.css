@@ -1,4 +1,5 @@
 @media screen and (min-width: 800px) { p, li, a { font-size: 14px; } 
+
  body { grid-template-rows: 100px 500px 540px 350px 250px; } 
 
  main { grid-template-columns: 50% 50%; grid-template-rows: 80px 460px; grid-template-areas: "title title""about location"; } 
@@ -6,6 +7,8 @@
  #location { padding: 30px 10px 0px 50px; } 
 
  #location p { width: 250px; } 
+
  #about h4, #about p, #about li { width: 350px; margin: 0 auto; } 
+
  footer { justify-content: space-around; } 
  }
