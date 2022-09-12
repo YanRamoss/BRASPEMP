@@ -24,7 +24,7 @@ nav a { color: var(--navItemColor); }
 
 footer { grid-area: footer; background-color: #00cba9; } 
 
-nav { grid-area: nav; position: fixed; width: 100%; display: grid; grid-template-columns: 170px auto; grid-template-rows: 100px; grid-template-areas: "ul_logo ul_items"; border-bottom: solid .1px var(--fontColor); background-color: var(--navBackground); z-index: 101; user-select: none; } 
+nav { grid-area: nav; position: fixed; width: 100%; display: grid; grid-template-columns: 170px auto; grid-template-rows: 100px; grid-template-areas: "ul_logo ul_items"; border-bottom: solid .1px #00cba9; background-color: var(--navBackground); z-index: 101; user-select: none; } 
 
 .ul_logo, .ul_items { display: flex; align-items: center; } 
 
