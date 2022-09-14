@@ -12,12 +12,9 @@ body {
     width: 100%;
     height: 100%;
     background-image: url(../img/background.png);
-    background-size: 100%;
+    background-size: cover;
     opacity: 0.8;
     align-items: center;
-    background-position-x: center;
-    background-position-y: center;
-    animation: background 20s ease-in-out;
 }
 
 @keyframes background {
