@@ -29,7 +29,9 @@
     footer {
         justify-content: space-around;
     }
+}
 
+@media screen and (min-width: 950px) {
     .background {
         background-position-x: center;
         background-position-y: center;
