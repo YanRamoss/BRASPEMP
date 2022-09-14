@@ -15,7 +15,6 @@ body {
     background-size: cover;
     opacity: 0.8;
     align-items: center;
-    animation: zoom 2s ease-out;
 }
 
 .background h4 {
@@ -299,14 +298,4 @@ svg {
     font-family: InterBold;
     cursor: pointer;
     color: white;
-}
-
-@keyframes zoom {
-    0% {
-        background-size: cover;
-    }
-
-    100% {
-        background-size: 120%;
-    }
 }
